@@ -4,157 +4,157 @@ namespace MG64Lib.GameData
 {
     public enum MusicSequence : short
     {
-        [Name("Eagle fanfare")]
+        [Name("Eagle fanfare"), InternalName("jing1")]
         Eagle,
 
-        [Name("Birdie fanfare")]
+        [Name("Birdie fanfare"), InternalName("jing02")]
         Birdie,
 
-        [Name("Par fanfare")]
+        [Name("Par fanfare"), InternalName("jing03")]
         Par,
 
-        [Name("Match win")]
+        [Name("Match win"), InternalName("jing04")]
         MatchWin,
 
-        [Name("Bogey fanfare")]
+        [Name("Bogey fanfare"), InternalName("jing05")]
         Bogey,
 
-        [Name("Over par fanfare")]
+        [Name("Over par fanfare"), InternalName("jing06")]
         OverPar,
 
-        [Name("Win point")]
+        [Name("Win point"), InternalName("shori")]
         WinPoint,
 
-        [Name("Lose point")]
+        [Name("Lose point"), InternalName("make")]
         LosePoint,
 
-        [Name("Tie")]
+        [Name("Tie"), InternalName("hikiwa")]
         Tie,
 
-        [Name("GBC remix 1")]
+        [Name("GBC remix 1"), InternalName("mode-ok")]
         GbcRemix1,
 
-        [Name("GBC remix 2")]
+        [Name("GBC remix 2"), InternalName("score")]
         GbcRemix2,
 
-        [Name("Hole intro 1")]
+        [Name("Hole intro 1"), InternalName("coace3")]
         HoleIntro1,
 
-        [Name("Toad Highlands")]
+        [Name("Toad Highlands"), InternalName("trad1")]
         ToadHighlands,
 
-        [Name("Koopa Park")]
+        [Name("Koopa Park"), InternalName("trad2")]
         KoopaPark,
 
-        [Name("Par putt")]
+        [Name("Par putt"), InternalName("par")]
         ParPutt,
 
-        [Name("Bogey putt")]
+        [Name("Bogey putt"), InternalName("bar")]
         BogeyPutt,
 
-        [Name("Birdie putt")]
+        [Name("Birdie putt"), InternalName("dan1")]
         BirdiePutt,
 
-        [Name("Shy Guy Desert")]
+        [Name("Shy Guy Desert"), InternalName("bgm04")]
         ShyGuyDesert,
 
-        [Name("Boo Valley")]
+        [Name("Boo Valley"), InternalName("bgm05")]
         BooValley,
 
-        [Name("Yoshi's Island")]
+        [Name("Yoshi's Island"), InternalName("bgm06")]
         YoshiIsland,
 
-        [Name("Dormie")]
+        [Name("Dormie"), InternalName("coace5")]
         Dormie,
 
-        [Name("Training")]
+        [Name("Training"), InternalName("training")]
         Training,
 
-        [Name("GBC menu")]
+        [Name("GBC menu"), InternalName("gbdata")]
         GbcMenu,
 
-        [Name("Controls menu")]
+        [Name("Controls menu"), InternalName("coace9")]
         ControlsMenu,
 
-        [Name("Speed golf hole intro")]
+        [Name("Speed golf hole intro"), InternalName("coace8")]
         SpeedGolfHoleIntro,
 
-        [Name("Stroke hole intro")]
+        [Name("Stroke hole intro"), InternalName("coace7")]
         StrokeHoleIntro,
 
-        [Name("Training hole intro")]
+        [Name("Training hole intro"), InternalName("coace6")]
         TrainingHoleIntro,
 
-        [Name("Hole intro 2")]
+        [Name("Hole intro 2"), InternalName("coace10")]
         HoleIntro2,
 
-        [Name("Unknown")]
+        [Name("Unknown"), InternalName("coace4")]
         Unknown,
 
-        [Name("Ring shot hole intro")]
+        [Name("Ring shot hole intro"), InternalName("pop1")]
         RingShotHoleIntro,
 
-        [Name("Ring shot")]
+        [Name("Ring shot"), InternalName("pop2")]
         RingShot,
 
-        [Name("Replay")]
+        [Name("Replay"), InternalName("replay")]
         ShotReplay,
 
-        [Name("Toad Tournament")]
+        [Name("Toad Tournament"), InternalName("trad3")]
         ToadTournament,
 
-        [Name("Koopa Cup")]
+        [Name("Koopa Cup"), InternalName("trad4")]
         KoopaTournament,
 
-        [Name("Shy Guy International")]
+        [Name("Shy Guy International"), InternalName("pop3")]
         ShyGuyTournament,
 
-        [Name("Boo Clasic")] // This is the 'correct' spelling...
+        [Name("Boo Clasic"), InternalName("pop4")] // Clasic is the 'correct' spelling...
         BooTournament,
 
-        [Name("Mario Open")]
+        [Name("Mario Open"), InternalName("pop5")]
         MarioTournament,
 
-        [Name("Tournament results")]
+        [Name("Tournament results"), InternalName("pop6")]
         TournamentResults,
 
-        [Name("Speed golf")]
+        [Name("Speed golf"), InternalName("time")]
         SpeedGolf,
 
-        [Name("Main menu")]
+        [Name("Main menu"), InternalName("64theme")]
         MainMenu,
 
-        [Name("GBC remix 3")]
+        [Name("GBC remix 3"), InternalName("nangoku")]
         GbcRemix3,
 
-        [Name("Mario's Star")]
+        [Name("Mario's Star"), InternalName("mariobgm")]
         MarioStar,
 
-        [Name("Title screen")]
+        [Name("Title screen"), InternalName("mario20")]
         TitleScreen,
 
-        [Name("Club slots")]
+        [Name("Club slots"), InternalName("clav")]
         ClubSlots,
 
-        [Name("Mini golf")]
+        [Name("Mini golf"), InternalName("patar1")]
         MiniGolf,
 
-        [Name("Mini golf hole intro")]
+        [Name("Mini golf hole intro"), InternalName("patar2")]
         MiniGolfHoleIntro,
 
-        [Name("Skins hole intro")]
+        [Name("Skins hole intro"), InternalName("skins")]
         SkinsHoleIntro,
 
-        [Name("Intro cutscene")]
+        [Name("Intro cutscene"), InternalName("openning")]
         IntroCutscene,
 
-        [Name("Yoshi Championship")]
+        [Name("Yoshi Championship"), InternalName("bgm20")]
         YoshiTournament,
 
-        [Name("Credits")]
+        [Name("Credits"), InternalName("ending")]
         Credits,
 
-        [Name("The end")]
+        [Name("The end"), InternalName("end-jingle")]
         TheEnd
     }
 }

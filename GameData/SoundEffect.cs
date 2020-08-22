@@ -1,38 +1,74 @@
-﻿namespace MG64Lib.GameData
+﻿using MG64Lib.Attributes;
+
+namespace MG64Lib.GameData
 {
     public enum SoundEffect
     {
+        [Name("Rain"), InternalName("AE01")]
         Rain,
+        [Name("Water"), InternalName("AE05")]
         Water,
+
+        [Name("Grass hit 1"), InternalName("BL01")]
         GrassHit1,
+        [Name("Grass hit 2"), InternalName("BL02")]
         GrassHit2,
+        [Name("Mud hit"), InternalName("BL03")]
         MudHit,
+        [Name("Sand hit"), InternalName("BL04")]
         SandHit,
+        [Name("Wood hit"), InternalName("BL05")]
         WoodHit,
+        [Name("Thunder 1"), InternalName("BL06")]
         Thunder1,
+        [Name("Water hit 1"), InternalName("BL07")]
         WaterHit1,
+        [Name("Water hit 2"), InternalName("BL08")]
         WaterHit2,
+        [Name("Tree hit"), InternalName("BL09")]
         TreeHit,
+        [Name("Bush hit"), InternalName("BL10")]
         BushHit,
+        [Name("Boing"), InternalName("BL11")]
         Boing,
+        [Name("Fall"), InternalName("BL14")]
         Fall,
+        [Name("Pin hit"), InternalName("BL15")]
         PinHit,
+        [Name("Flag hit 1"), InternalName("BL16")]
         FlagHit1,
+        [Name("Cup hit 1"), InternalName("BL17")]
         CupHit1,
+        [Name("Cup hit 2"), InternalName("BL18")]
         CupHit2,
+        [Name("Cup hit 3"), InternalName("BL19")]
         CupHit3,
+        [Name("Gust"), InternalName("BL20")]
         Gust,
+        [Name("White noise"), InternalName("BL22")]
         WhiteNoise,
+        [Name("Metal hit"), InternalName("BL23")]
         MetalHit,
+
+        [Name("Birds - bull-headed shrike"), InternalName("BR01MOZU")]
         Birds1,
+        [Name("Birds - cuckoo"), InternalName("BR02KAKKO")]
         Birds2,
+        [Name("Birds - canary"), InternalName("BR03KANARIA")]
         Birds3,
+        [Name("Birds - Japanese white-eye"), InternalName("BR04MEJIRO")]
         Birds4,
+        [Name("Birds - sparrow 1"), InternalName("BR05SUZUME")]
         Birds5,
+        [Name("Birds - sparrow 2"), InternalName("BR06SUZUME2")]
         Birds6,
+        [Name("Birds - lark 1"), InternalName("BR07HIBARI")]
         Birds7,
+        [Name("Birds - lark 2"), InternalName("BR08HIBARI1")]
         Birds8,
+        [Name("Birds - kingfisher"), InternalName("BR09KAWASEMI")]
         Birds9,
+        
         FlagHit2,
         MenuSfx1,
         MenuSfx2,
@@ -160,27 +196,29 @@
         NarratorFantasticPutt,
         NarratorGreatRoundOfGolf,
         NarratorVeryWellPlayed,
-        Character1Hahaha,
+
+        AzaleaHahaha,
         MarioWeeHee1,
-        Character1HereIAm,
-        Character1Alright,
-        Character1Oh,
+        AzaleaHereIAm,
+        AzaleaAlright,
+        AzaleaOh,
         MarioWeeHee2,
-        Character1OhNo,
-        Character1Fine,
-        Character1HereWeGo,
-        Character1YahooHahaha,
-        Character1Yeah,
-        Character1GoodShot,
-        Character1NiceShot,
-        Character1Wonderful,
-        Character1Excellent,
-        Character1Beautiful,
-        Character1Okay,
-        Character1HurryUp,
-        Character1Fore,
-        Character1Sigh,
-        Character1WooHoo,
+        AzaleaOhNo,
+        AzaleaFine,
+        AzaleaHereWeGo,
+        AzaleaYahooHahaha,
+        AzaleaYeah,
+        AzaleaGoodShot,
+        AzaleaNiceShot,
+        AzaleaWonderful,
+        AzaleaExcellent,
+        AzaleaBeautiful,
+        AzaleaOkay,
+        AzaleaHurryUp,
+        AzaleaFore,
+        AzaleaSigh,
+        AzaleaWooHoo,
+
         BabyMarioHahaha,
         BabyMarioWow,
         BabyMarioHello,
@@ -206,6 +244,7 @@
         BabyMarioHm,
         BabyMarioWee,
         BabyMarioWahWahWah,
+
         CharlieHahaha,
         CharlieWow,
         CharlieHereIAm,
@@ -228,6 +267,7 @@
         CharlieFore,
         CharlieOh,
         CharlieWhoTheMan,
+
         DK1,
         DK2,
         DK3,
@@ -241,6 +281,7 @@
         DK11,
         DK12,
         DK13,
+
         HarryHahaha,
         HarryWow,
         HarryHereIAm,
@@ -264,47 +305,50 @@
         HarryOh,
         HarryWoo,
         HarryYes,
-        Character2Hahaha,
+
+        JoeHahaha,
         MarioWeeHee8,
-        Character2HereIAm,
-        Character2Alright,
+        JoeHereIAm,
+        JoeAlright,
         MarioWeeHee9,
         MarioWeeHee10,
-        Character2OhNo,
-        Character2Fine,
-        Character2HereWeGo,
-        Character2Yahoo1,
-        Character2Yeah,
-        Character2GoodShot,
-        Character2NiceShot,
-        Character2Wonderful,
-        Character2Excellent,
-        Character2Beautiful,
-        Character2Okay,
-        Character2HurryUp,
-        Character2Fore,
-        Character2Oh,
-        Character2Woo,
-        Character2Yahoo2,
-        Character3Hahaha,
-        Character3HereIAm,
-        Character3Alright,
-        Character3Oh1,
-        Character3OhNo,
-        Character3Fine,
-        Character3HereWeGo,
-        Character3Yahoo1,
-        Character3Yeah,
-        Character3GoodShot,
-        Character3NiceShot,
-        Character3Wonderful,
-        Character3Excellent,
-        Character3Beautiful,
-        Character3Okay,
-        Character3HurryUp,
-        Character3Fore,
-        Character3Oh2,
-        Character3Yes,
+        JoeOhNo,
+        JoeFine,
+        JoeHereWeGo,
+        JoeYahoo1,
+        JoeYeah,
+        JoeGoodShot,
+        JoeNiceShot,
+        JoeWonderful,
+        JoeExcellent,
+        JoeBeautiful,
+        JoeOkay,
+        JoeHurryUp,
+        JoeFore,
+        JoeOh,
+        JoeWoo,
+        JoeYahoo2,
+
+        KidHahaha,
+        KidHereIAm,
+        KidAlright,
+        KidOh1,
+        KidOhNo,
+        KidFine,
+        KidHereWeGo,
+        KidYahoo1,
+        KidYeah,
+        KidGoodShot,
+        KidNiceShot,
+        KidWonderful,
+        KidExcellent,
+        KidBeautiful,
+        KidOkay,
+        KidHurryUp,
+        KidFore,
+        KidOh2,
+        KidYes,
+
         Bowser1,
         Bowser2,
         Bowser3,
@@ -318,6 +362,7 @@
         Bowser11,
         Bowser12,
         Bowser13,
+
         LuigiHahaha,
         LuigiWow,
         LuigiHereIAm,
@@ -341,6 +386,7 @@
         LuigiPrettyGood,
         LuigiOh1,
         LuigiOh2,
+
         MapleHahaha,
         MarioWeeHee11,
         MapleHereIAm,
@@ -364,6 +410,7 @@
         MapleOh2,
         MapleWooHoo,
         MapleOhYes,
+
         MarioHahaha1,
         MarioWeeHee13,
         MarioHereIAm,
@@ -397,6 +444,7 @@
         MarioHelloBall,
         MarioUhOh,
         MarioOh2,
+
         PeachHahaha,
         PeachOh1,
         PeachHereIAm,
@@ -421,6 +469,7 @@
         PeachWinsAgain,
         PeachHeyMario1,
         PeachHeyMario2,
+
         PlumHahaha1,
         PlumWow,
         PlumHereIAm,
@@ -445,6 +494,7 @@
         PlumLookingGood,
         PlumYes,
         PlumHahaha2,
+
         SonnyHahaha1,
         SonnyWow,
         SonnyHereIAm,
@@ -470,28 +520,30 @@
         SonnyYes,
         SonnyHereWeGo,
         SonnyNiceShot2,
-        Character4Hahaha,
-        Character4Wow,
-        Character4HereIAm,
-        Character4Alright,
+
+        SherryHahaha,
+        SherryWow,
+        SherryHereIAm,
+        SherryAlright,
         MarioWeeHee17,
         MarioWeeHee18,
-        Character4OhNo,
-        Character4Fine,
-        Character4HereWeGo,
-        Character4Yahoo1,
-        Character4Yeah,
-        Character4GoodShot,
-        Character4NiceShot,
-        Character4Wonderful,
-        Character4Excellent,
-        Character4Beautiful,
-        Character4Okay,
-        Character4HurryUp,
-        Character4Yay,
-        Character4Fore,
-        Character4Oh,
-        Character4ThumbsUp,
+        SherryOhNo,
+        SherryFine,
+        SherryHereWeGo,
+        SherryYahoo1,
+        SherryYeah,
+        SherryGoodShot,
+        SherryNiceShot,
+        SherryWonderful,
+        SherryExcellent,
+        SherryBeautiful,
+        SherryOkay,
+        SherryHurryUp,
+        SherryYay,
+        SherryFore,
+        SherryOh,
+        SherryThumbsUp,
+
         WarioHahaha,
         WarioWow,
         WarioHereIAm,
@@ -514,26 +566,49 @@
         WarioFore,
         WarioIsTheBest,
         WarioSuperDuper,
+
+        [Name("Yoshi - 1"), InternalName("CYS00")]
         Yoshi1,
+        [Name("Yoshi - 2"), InternalName("CYS01")]
         Yoshi2,
+        [Name("Yoshi - 3"), InternalName("CYS02")]
         Yoshi3,
+        [Name("Yoshi - 4"), InternalName("CYS03")]
         Yoshi4,
+        [Name("Yoshi - 5"), InternalName("CYS04")]
         Yoshi5,
+        [Name("Yoshi - 6"), InternalName("CYS05")]
         Yoshi6,
+        [Name("Yoshi - 7"), InternalName("CYS06")]
         Yoshi7,
+        [Name("Yoshi - 8"), InternalName("CYS07")]
         Yoshi8,
+        [Name("Yoshi - 9"), InternalName("CYS08")]
         Yoshi9,
+        [Name("Yoshi - 10"), InternalName("CYS13")]
         Yoshi10,
+        [Name("Yoshi - 11"), InternalName("CYS14")]
         Yoshi11,
+        [Name("Yoshi - 12"), InternalName("CYS17")]
         Yoshi12,
+        [Name("Yoshi - 13"), InternalName("CYS18")]
         Yoshi13,
+        [Name("Yoshi - 14"), InternalName("CYS19")]
         Yoshi14,
+        [Name("Yoshi - 15"), InternalName("CYS20")]
         Yoshi15,
+        [Name("Yoshi - 16"), InternalName("CYS21")]
         Yoshi16,
+
+        [Name("Mario Golf 64"), InternalName("TITLE")]
         MarioGolf64,
+        [Name("Welcome to Mario Golf 1"), InternalName("USATITLE")]
         WelcomeToMarioGolf1,
+        [Name("Welcome to Mario Golf 2"), InternalName("USATITLE01")]
         WelcomeToMarioGolf2,
+        [Name("Welcome to Mario Golf 3"), InternalName("USATITLE02")]
         WelcomeToMarioGolf3,
+        [Name("Mario - hahaha 4"), InternalName("WARAI3")]
         MarioHahaha4
     }
 }
