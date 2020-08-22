@@ -37,7 +37,7 @@ namespace MG64Lib.RomHandling
                 var address = RomAddresses.objectTable;
                 for (var i = 0; i < RomAddresses.objectCount; i++)
                 {
-                    entries.Add(new ObjectTableEntry(ArrayUtils.Read32(rom, address), ArrayUtils.Read32(rom, address)));
+                    entries.Add(new ObjectTableEntry(ArrayUtils.Read32(rom, address), ArrayUtils.Read32(rom, address + 4)));
                     address += 0x58;
                 }
                 return entries;
